@@ -1,30 +1,19 @@
-import express from 'express';
-import bodyParser from 'body-parser';
-import helmet from 'helmet';
-import morgan from 'morgan';
-import dotenv from 'dotenv';
-dotenv.config({
-  path: process.env.NODE_ENV === "test" ? ".env.testing" : ".env"
-})
-
-console.log(process.env.NODE_ENV)
+import express from "express";
+import helmet from "helmet";
+import cors from "cors";
+import morgan from "morgan";
+import "dotenv/config.js";
+import router from "./src/routes/main.js";
 
 const app = express();
 
+app.use(cors());
+app.use(morgan("common"));
+app.use(helmet());
+app.use(router);
 
-
-
-
-
-
-
-
-
-
-
-
-const PORT = process.env.PORT || 3000
+const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () => {
-  console.log(`running at port ${PORT}...`)
-})
+  console.log(`running at port ${PORT}...`);
+});

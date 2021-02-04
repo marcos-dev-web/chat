@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="./src/css/reset.css" />
+    <link rel="stylesheet" href="./src/css/main.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <h1 class="title_page">Login</h1>
+    <div class="wrapper">
+      <form action="http://localhost:4000/login" method="POST">
+        <input
+          type="text"
+          name="name"
+          id="name"
+          class="input_box"
+          required
+          minlength="3"
+          placeholder="Digite seu nome"
+          title="Digite seu nome"
+          spellcheck="false"
+          autocomplete="username"
+        />
+        <input
+          type="password"
+          name="pass"
+          id="pass"
+          class="input_box"
+          required
+          minlength="8"
+          placeholder="Digite sua senha"
+          title="Digite sua senha"
+          spellcheck="false"
+          autocomplete="new-password"
+        />
+        <button class="go" name="go">Register</button>
+      </form>
+    </div>
+    <script src="./src/js/script.js"></script>
+  </body>
+</html>

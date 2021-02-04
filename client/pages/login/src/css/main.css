@@ -1,0 +1,99 @@
+.title_page {
+  font-size: 70px;
+  font-weight: bold;
+  text-align: center;
+  padding: 30px 0;
+}
+
+.wrapper {
+  width: 100%;
+  /* background: red; */
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+form[action^="http://"]{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  max-width: 400px;
+  border-radius: 10px;
+  background-color: rgba(0,0,0,.5);
+  padding: 40px 0;
+}
+
+.input_box,
+.go {
+  min-width: 250px;
+  max-width: 350px;
+  width: 100%;
+  border-radius: 23px;
+  transition: all 150ms ease-in;
+}
+
+.input_box {
+  font-size: 25px;
+  margin: 0px 0 40px 0;
+  padding: 5px 10px 5px 10px;
+  background-color: #0f967f;
+  color: white;
+}
+
+.input_box::-webkit-input-placeholder {
+  font-size: 18px;
+  color: rgb(205, 229, 248);
+}
+
+.input_box:not(.bloqued):focus {
+  background-color: #087a67;
+}
+
+.go {
+  font-size: 20px;
+  padding: 5px;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: #575fcf;
+  color: white;
+  cursor: pointer;
+}
+
+.go:hover {
+  background-color: #3c40c6;
+}
+
+@media screen and (max-width: 900px) {
+  .input_box,
+  .go {
+    min-width: none;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  form[action^="http://"] {
+    min-width: 400px;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  form[action^="http://"] {
+    width: 100%;
+    min-width: 0 !important;
+  }
+  .input_box,
+  .go {
+    width: 90%;
+  }
+}
+
+.bloqued {
+  pointer-events: none;
+  background-color: #808e9b;
+}
+
+.bloqued::selection {
+  color: rgb(205, 229, 248);
+  background-color: transparent;
+}

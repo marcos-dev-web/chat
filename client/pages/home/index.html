@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home - Messages</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./src/css/reset.css" />
+    <link rel="stylesheet" href="./src/css/main.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <main class="container_main">
+      <section class="contacts">
+        <header class="header_contacts">
+          <h2 class="name_user">Marcos</h2>
+        </header>
+        <div class="contacts_list">
+          
+        </div>
+      </section>
+
+      <section class="messages">
+        <header class="user_message_actual">
+          <div class="name_user_actual">
+            <p>jose maria</p>
+          </div>
+        </header>
+        <div class="messages_view">
+          <div class="message_box me">
+            <div class="message">
+              <p class="message_text">ola quanto tempo em!</p>
+              <span class="hour_message_text">17:31</span>
+            </div>
+          </div>
+          <div class="message_box he">
+            <div class="message">
+              <p class="message_text">
+                ola amigo a quanto tempo nao te vejo ola amigo a quanto tempo
+                nao te vejo ola amigo a quanto tempo nao te vejo ola amigo a
+                quanto tempo nao te vejo ola amigo a quanto tempo nao te vejo
+                ola amigo a quanto tempo nao te vejo
+              </p>
+              <span class="hour_message_text">17:32</span>
+            </div>
+          </div>
+          <div class="message_box me">
+            <div class="message">
+              <p class="message_text">ola quanto tempo em!</p>
+              <span class="hour_message_text">17:31</span>
+            </div>
+          </div>
+          <div class="message_box he">
+            <div class="message">
+              <p class="message_text">
+                ola amigo a quanto tempo nao te vejo ola amigo a quanto tempo
+                nao te vejo ola amigo a quanto tempo nao te vejo ola amigo a
+                quanto tempo nao te vejo ola amigo a quanto tempo nao te vejo
+                ola amigo a quanto tempo nao te vejo
+              </p>
+              <span class="hour_message_text">17:32</span>
+            </div>
+          </div>
+          <div class="message_box me">
+            <div class="message">
+              <p class="message_text">ola quanto tempo em!</p>
+              <span class="hour_message_text">17:31</span>
+            </div>
+          </div>
+          <div class="message_box he">
+            <div class="message">
+              <p class="message_text">
+                ola amigo a quanto tempo nao te vejo ola amigo a quanto tempo
+                nao te vejo ola amigo a quanto tempo nao te vejo ola amigo a
+                quanto tempo nao te vejo ola amigo a quanto tempo nao te vejo
+                ola amigo a quanto tempo nao te vejo
+              </p>
+              <span class="hour_message_text">17:32</span>
+            </div>
+          </div>
+        </div>
+        <form action="http://localhost:4000/send" method="POST">
+          <textarea
+            name="text"
+            cols="30"
+            rows="5"
+            placeholder="Menssagem..."
+            class="msg_box"
+          ></textarea>
+          <button type="submit" class="send_msg">
+            <i class="fas fa-paper-plane"></i>
+          </button>
+        </form>
+      </section>
+    </main>
+    <script src="./src/js/send.js"></script>
+  </body>
+</html>
